@@ -22,31 +22,20 @@ public class Main {
         penyewa1.alamat = penyewa.nextLine();
 
         System.out.println("DATA PETUGAS");
-        System.out.println("Nama Petugas = " +pemilik.getNama());
-        System.out.println("No.Hp : " +pemilik.getNo_tlpn());
+        System.out.println("Nama Petugas = " + pemilik.getNama());
+        System.out.println("No.Hp : " + pemilik.getNo_tlpn());
         System.out.println("==========DATA PENYEWA===========");
-        System.out.println("Nama Penyewa = " +penyewa1.getNama());
-        System.out.println("No ID = " +penyewa1.getId_penyewa());
-        System.out.println("No HP = " +penyewa1.getNo_tlpn());
-        System.out.println("Alamat = " +penyewa1.getAlamat());
+        System.out.println("Nama Penyewa = " + penyewa1.getNama());
+        System.out.println("No ID = " + penyewa1.getId_penyewa());
+        System.out.println("No HP = " + penyewa1.getNo_tlpn());
+        System.out.println("Alamat = " + penyewa1.getAlamat());
 
-        Motor motor1 = new Motor("1,2");
-        Scanner Motor = new Scanner(System.in);
+        Motor_Lama sewa = new Motor_Lama();
+        sewa.sewamotor(4);
 
-
-        Motor cek1 = new Motor_Lama("1");
-        Motor_Lama Ml = new Motor_Lama("1");
-        Scanner Motor_Lama = new Scanner(System.in);
-        System.out.println("DAFTAR MOTOR LAMA = "+cek1.getId_sewa());
-        cek1.Motor_Lama();
-        System.out.println("Pilih motor Sesuai Dengan Yang Anda Inginkan = ");
+        Motor_Baru Sewa = new Motor_Baru();
+        Sewa.sewamotor(5);
 
 
-        Motor cek2 = new Motor_Baru("2");
-        Motor_Baru MB = new Motor_Baru("2");
-        Scanner Motor_Baru = new Scanner(System.in);
-        System.out.println("DAFTAR MOTOR BARU = "+cek2.getId_sewa());
-        cek2.Motor_Baru();
-        System.out.println("Pilih motor Sesuai Dengan Yang Anda Inginkan = ");
     }
 }
