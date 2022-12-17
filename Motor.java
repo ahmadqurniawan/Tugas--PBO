@@ -1,8 +1,12 @@
-public abstract class Motor {
-    public abstract int Hargasewa(int lamasewa);
+public abstract class Motor implements DaftarMotor {
+        public abstract void insertdata();
 
-    public void sewamotor(int lamasewa) {
-        int hargasewa = Hargasewa(lamasewa);
-        System.out.println("Harga sewa motor: " + hargasewa);
+    @Override
+    public void Tipemotor() {
+        System.out.println("SELAMAT DATANG DI APLIKASI RENTAL MOTOR");
+        System.out.println("===============Pilihan Menu============");
+        System.out.println("1. Daftar Motor Lama");
+        System.out.println("2. Daftar Motor Baru");
+        System.out.println("=======================================");
     }
 }
