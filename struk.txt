@@ -1,0 +1,9 @@
+============STRUK PENYEWAAN MOTOR============
+Nama Penyewa : alvi
+No.ID        : 1
+NO.HP        : 2
+Alamat       : yogya
+Total Harga  : 600000
+==============================================
+=======Terima Kasih Atas Kunjungan Anda=======
+==============================================
